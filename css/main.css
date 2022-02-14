@@ -45,11 +45,18 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 
 #presentacion{
     background: rgb(255,255,255);
-    background: url(../img/fondo.jpg),  linear-gradient(0deg, rgb(199, 199, 216) 0%, rgba(99,196,255,1) 57%); /*Ponemos este fondo para el que cuando la pantalla este en el tamaño movil 
-    apareza este fondo ya que la imagen de fondo englobara unicamente el texto y se quedara en la parte superior*/
+    background: url(../img/fondo.jpg),  linear-gradient(0deg, rgb(199, 199, 216) 0%, rgba(99,196,255,1) 57%); /*Ponemos un segundo fondo adicional para cuando el fondo principal no cubra toda la sección.*/
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: -20px;
+}
+
+    
+    @media screen and (max-width: 955px) {
+    #presentacion {/*No se puede hacer con boostrap a si que lo hacemos de esta manera, lo que hace es cambiar la imagen de fondo por un fondo, para hacerlo más responsive.*/
+        background-image: linear-gradient(0deg, rgb(146, 217, 221) 0%,rgb(83, 241, 122) 57%);
+    }
+
 }
 
 .card-border{
