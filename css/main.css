@@ -26,11 +26,12 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     width: 100%;
 }
 #separator-bienvenida .content{
-    width: 150%;
+    width: 125%;
     height: 100px;
-    margin-left: -25%; /*Utilizamos este margin-left porque boostrap no me deja realizar esta cantidad exacta de margin*/
-    border-bottom-left-radius: 50%; /*Utilizamos el radius para conseguir el efecto redondeado*/
-    border-bottom-right-radius: 50%;
+    margin-left: -25%;/*Utilizamos este margin-left porque boostrap no me deja realizar esta cantidad exacta de margin*/
+    border-bottom-left-radius: 66%;
+    border-bottom-right-radius: 23%; /*Utilizamos el radius para conseguir el efecto redondeado, este tipo de radius no se puede conseguir con boostrap*/
+
 }
 #bienvenida{
     background-color: #DC3545;
@@ -88,7 +89,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     background-color: #4E8259;
 }
 #separator-entretenimiento .content{
-    width: 110%;
+    width: 105%;
     height: 50px;
     margin-left: -5%;
 /*   border-top-left-radius: 50%;
