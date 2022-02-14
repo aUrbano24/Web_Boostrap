@@ -1,9 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 h1,h2,h3,h4,h5, button, .amiibo-name{
     font-family: 'Bitter', serif;
 
 }
 #navbar{
-    z-index: 1;
+    z-index: 1;/*a*/
 }
 
 #cuadro-bienvenida{
@@ -16,8 +20,8 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     display: block;
     height: 20px;
     width: 50%;
-    margin: 0 auto;
-    position: relative;
+    margin: 0 auto;/*a*/
+    position: relative; 
     left: auto;
     margin-top: -40px;
 }
@@ -38,8 +42,8 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     background-color: #DC3545;
     position: relative;
     margin-top: -20px;
-    z-index: 10;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 10;/*a*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);/*a*/
 }
 
 
@@ -58,10 +62,10 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 .card-border{
-    border: solid 10px white;
+    border: solid 10px white;/*a*/
     border-radius: 20px;
     overflow: hidden;
-    transition: all ease-out 0.2s;
+    transition: all ease-out 0.2s;/*a*/
 }
 .card-border:hover{
     transform: scale(1.05);
@@ -116,14 +120,8 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     border-radius: 15px;
 }
 
-#play{   
-    background: url(../img/bg-04.png);
+#entretenimiento{   
     background-color: rgb(255, 255, 219);
     background-size: 40px 40px;
 }
 
-#footer{
-    background: url(../img/bg-04.png);
-    background-color: rgb(224, 144, 24);
-    background-size: 50px 50px;
-}
