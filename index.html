@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-auto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,12 @@
     <!--CSS Propio-->
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="overflow-auto">
 
-  <!-- MENU DE NAVEGACIÓN-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-danger" id="navbar"> <!-- bg-danger = fondo rojo  ||  navbar-dark = estilo del menu oscuro-->
+  <!-------------------------------------- MENU DE NAVEGACIÓN ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger position-relative" id="navbar"> <!-- bg-danger = fondo rojo  ||  navbar-dark = estilo del menu oscuro-->
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.jpg" alt="" width="200"> <!-- ENLACE/IMAGEN LOGO-->
@@ -29,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Div que contiene los enlaces del menú -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#presentacion">Presentacion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#presentacion">Presentación</a></li>
                     <li class="nav-item"><a class="nav-link" href="#entretenimiento">Entretenimiento</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tipos">Tipos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#amiibos">Amiibos</a></li>
@@ -37,9 +39,11 @@
             </div>
         </div>
     </nav>
-  <!-- FIN MENU DE NAVEGACIÓN-->
+    <!--------------------------------------FIN MENU DE NAVEGACIÓN ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
 
-    <!-- CAROUSEL-->
+      <!-------------------------------------- CARROUSEL ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
     <section id="carrousel">
         <div id="mainSlider" class="carousel slide" data-ride="carousel">  
             <div class="carousel-inner">
@@ -55,14 +59,16 @@
             </div>
         </div>
     </section>
-    <!-- FIN CAROUSEL-->
+      <!-------------------------------------- FIN CARROUSEL ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
 
-    <!-- CUADRO DE BIENVENIDA A POKEMON-->
+      <!-------------------------------------- CUADRO DE BIENVENIDA A POKEMON ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
     <div id="cuadro-bienvenida">
-        <div id="bienvenida" class="container w-50 pl-5 pr-5 rounded-lg"> <!--aplicamos un width 50 y padding left y right de nivel 5, además redondeamos los bordes-->
+        <div id="bienvenida" class="container w-50 pl-5 pr-5 rounded-lg position-relative z-index-3"> <!--aplicamos un width 50 y padding left y right de nivel 5, además redondeamos los bordes-->
           <!-- CREAMOS UNA FILA Y CENTRAMOS EL CONTENIDO-->
           <div class="row align-items-center">  <!--Div fila que además centramos que dentro tendra las respectivas columnas.-->
-            <div class="col-sm col-sm p-3" id="description"> <!--1º COLUMNA-->
+            <div class="col-sm col-sm p-3 position-relative" id="description"> <!--1º COLUMNA-->
               <img src="./img/pikachu_saludando.png" class="w-75 mx-auto d-block" alt="pikachu_saludando"> <!--IMAGEN DE BIENVENIDA LA CÚAL CENTRAMOS-->
             </div>
             
@@ -72,26 +78,30 @@
           </div>
         </div>
     </div> 
-    <!-- FIN CUADRO DE BIENVENIDA A POKEMON-->
+      <!-------------------------------------- FIN CUADRO DE BIENVENIDA A POKEMIN ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
 
-    <!-- SEPARATOR DEL CUADRO DE BIENVENIDA-->
-    <div id="separator-ribbon">
+      <!-------------------------------------- SEPARADOR DEL CUADRO DE BIENVENIDA ------------------------------------------------------>
+
+    <div id="separator-bienvenida" class="position-relative">
       <div class="content bg-dark"></div>
     </div>
-  <!-- FIN SEPARATOR DEL CUADRO DE BIENVENIDA-->
+
+  <!-------------------------------------- FIN SEPARADOR DEL CUADRO DE BIENVENIDA ------------------------------------------------------>
   
-    <!-- PRESENTACION-->
+    <!----------------------------------------------- PRESENTACIÓN ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
 
     <section id="presentacion">
       <div class="container-xxl p-5">
         
         <div class="row">
-            <h3 class="text-center pb-5 mb-5 h1"><strong>¡Descubre el maravilloso mundo Pokemon!</strong> </h3>
+            <h3 class="text-center pb-5 h1"><strong>¡Descubre el maravilloso mundo Pokemon!</strong> </h3>
         </div>
 
         <div class="row">
           <div class="col-md">
-            <div class="card w-100 card-border mb-5">
+            <div class="card w-100 card-border overflow-auto mb-5">
                 <img src="img/explora_pokemon.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">Explora cada rincón de este mundo y descubre cada una de las fantásticas criaturas que lo habitan.¡A que esperas!</p>
@@ -99,7 +109,7 @@
               </div>
           </div>
             <div class="col-md">
-                <div class="card w-100 card-border mb-5">
+                <div class="card w-100 card-border overflow-auto mb-5">
                     <img src="./img/capturando_pokemon.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text">Utiliza tus pokeballs para capturar pokemon y completar tu pokédez, ¿Podrás conseguirlo? Tan solo son 898 pokemons.</p>
@@ -107,7 +117,7 @@
                   </div>
             </div>
             <div class="col-md">
-                <div class="card w-100 card-border mb-5">
+                <div class="card w-100 card-border overflow-auto mb-5">
                     <img src="./img/combates_pokemon.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text">Entrena a tus pokemons y combate, el resto de entrenadores pokemon te estan esperando, ¿podrás ganar la liga?</p>
@@ -117,13 +127,15 @@
           </div>
         </div>
     </section>  
-    
+    <!----------------------------------------------- FIN PRESENTACIÓN ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
 
-    <div id="separator-amiibos">
+    <div id="separator-entretenimiento" class=" z-index-2 rounded">
       <div class="content bg-dark"></div>
     </div>
 
-    <!-- ¿DONDE ENCONTRAR?-->
+    <!----------------------------------------------- ENTRETENIMIENTO ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
   <div id="entretenimiento" >
     <div class="container-sm p-5">
       <h3 class="text-center h1">El entretenimiento con Pokemon esta asegurado!!</h3>
@@ -155,7 +167,7 @@
                   <div class="col-md-6">
                     <div class="card-body">
                       <h5 class="card-title">Peliculas</h5>
-                      <p class="card-text">Pokemon es una de las series más vistas hasta la fecha con ni más ni menos que 24 temporadas</p>
+                      <p class="card-text">No solo la serie, si no que también cuenta con hasta 23 increibles películas a día de hoy.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -175,7 +187,7 @@
                   <div class="col-md-6">
                     <div class="card-body">
                       <h5 class="card-title">Videojuegos</h5>
-                      <p class="card-text">Pokemon es una de las series más vistas hasta la fecha con ni más ni menos que 24 temporadas</p>
+                      <p class="card-text">Como no recordar el origen de pokemon con sus fantásticos juegos y sus 95 entregas</p>
                     </div>
                   </div><!--col-->
                 </div><!--row-->
@@ -187,7 +199,7 @@
                   <div class="col-md-6">
                     <div class="card-body">
                       <h5 class="card-title">Juego Cartas</h5>
-                      <p class="card-text">Pokemon es una de las series más vistas hasta la fecha con ni más ni menos que 24 temporadas</p>
+                      <p class="card-text">Colecciona, juega y diviértete con las cartas de Pokemon. ¡A qué esperas!</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -201,8 +213,11 @@
       </div>
     </div>
   </div>
+<!----------------------------------------------- FIN ENTRETENIMIENTO ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
 
-      <!-- TIPOS -->
+      <!----------------------------------------------- TIPOS ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
       <!--Se subdivira principalmente en 6 filas y 3 columnas que ira cambiando con el responsive.-->  
       <section id="tipos" class="container-fluid text-center p-5 bg-light">
         <h2 class="text-center pb-5">Elementos Pokemon</h2>
@@ -501,9 +516,12 @@
         </div>
       </section>
 
-      <!--FIN TIPOS-->
+      <!----------------------------------------------- FIN TIPOS ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
   
-    <!-- FIGURAS AMIIBOS-->
+    <!----------------------------------------------- FIGURAS AMIIBOS ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
+
     <section id="amiibos" class="px-5 pb-5 bg-dark">
         <div class="container">
             <div class="row">
@@ -512,19 +530,19 @@
             <div class="row row-cols-1 row-cols-2 row-cols-sm-2 row-cols-md-4">
                 <div class="col-sm">
                   <img src="./img/amiibos/Charizard_amiibo.png" alt="" class="w-100 amiibo">
-                  <div class="text-center"><span class="amiibo-name h5 p-2">Charizard</span></div>
+                  <div class="text-center"><span class="amiibo-name h5 p-2 d-inline-block mt-0 mb-0 mr-auto ml-auto">Charizard</span></div>
                 </div>
                 <div class="col-sm">
                   <img src="./img/amiibos/Lucario_amiibo.png" alt="" class="w-100 amiibo">
-                  <div class="text-center"><span class="amiibo-name h5 p-2">Lucario</span></div>
+                  <div class="text-center"><span class="amiibo-name h5 p-2 d-inline-block mt-0 mb-0 mr-auto ml-auto">Lucario</span></div>
                 </div>
                 <div class="col-sm">
                   <img src="./img/amiibos/Ivysaur_amiibo.png" alt="" class="w-100 amiibo">
-                  <div class="text-center"><span class="amiibo-name h5 p-2">Ivysaur</span></div>
+                  <div class="text-center"><span class="amiibo-name h5 p-2 d-inline-block mt-0 mb-0 mr-auto ml-auto">Ivysaur</span></div>
                 </div>
                 <div class="col-sm">
                   <img src="./img/amiibos/greninja_amiibo.png" alt="" class="w-100 amiibo">
-                  <div class="text-center"><span class="amiibo-name h5 p-2">Greninja</span></div>
+                  <div class="text-center"><span class="amiibo-name h5 p-2 d-inline-block mt-0 mb-0 mr-auto ml-auto">Greninja</span></div>
                 </div>
             </div>
             <div class="row py-5">
@@ -537,11 +555,14 @@
                 
             </div>
         </div>
-        <div id="separator-amiibos-footer">
-        </div>    
+<!--         <div id="separator-amiibos-footer">
+        </div>     -->
     </section>
 
-    <!--FIN FIGURAS AMIIBOS-->
+    <!----------------------------------------------- FIN FIGURAS AMIIBOS ------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------->
+
+  <!----------------------------------------------- MAPA Y ACORDEÓN------------------------------------------------------>
     <div class="row">
       <!--Google map-->
       <div id="map-container-google-1" class="z-depth-1-half map-container pt-4  d-flex align-items-center justify-content-center" style="height: 200px"> <!--Utilizamos flex para alinear al centro-->
@@ -580,8 +601,9 @@
       </div>
       <!--Fin Acordeón-->
     </div>
+    <!----------------------------------------------- FIN MAPA Y ACORDEÓN------------------------------------------------------>
               
-    <!--PIE DE PAGINA \ FOOTER-->
+    <!----------------------------------------------- FOOTER ------------------------------------------------------>
     <footer class="w-100  d-flex  align-items-center justify-content-center">
         <p class="fs-5 px-3 pt-3">ExpertD. Todos Los Derechos Reservados 2022</p>
         <div id="iconos" >
@@ -593,7 +615,7 @@
             <br>
         </div>
       </footer>
-    
+        <!----------------------------------------------- FIN FOOTER ------------------------------------------------------>
 
     <!--JAVASCRIPT BOOSTRAP-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

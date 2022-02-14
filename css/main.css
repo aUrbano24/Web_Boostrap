@@ -6,51 +6,42 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     font-family: 'Bitter', serif;
 
 }
-#navbar{
-    z-index: 1;/*a*/
-}
-
+/*------------------------BIENVENIDA-----------------------------*/
 #cuadro-bienvenida{
     background-color: #DC3545;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 21, 21, 0.5) 25px, rgba(131, 21, 21, 0.5) 40px);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 21, 21, 0.5) 25px, rgba(131, 21, 21, 0.5) 40px); /*Líneas del cuadro de bienvenida*/
 }
-#cuadro-bienvenida::after{
-    content: '';
-    background-color: transparent;
-    display: block;
+#cuadro-bienvenida::after{    /*Utilizamos after, ya que vamos añadir contenido al content*/
+    content: '';    /*Para evitar que se vean líneas en blanco del fondo*/
     height: 20px;
     width: 50%;
-    margin: 0 auto;/*a*/
-    position: relative; 
+    margin: 0 auto; /*Ponemos un margin 0 arriba y abajo y un margin automatico a los lados*/
     left: auto;
     margin-top: -40px;
 }
-#separator-ribbon{
+#separator-bienvenida{
     width: 100%;
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
 }
-#separator-ribbon .content{
+#separator-bienvenida .content{
     width: 150%;
     height: 100px;
-    margin-left: -25%;
-    border-bottom-left-radius: 50%;
+    margin-left: -25%; /*Utilizamos este margin-left porque boostrap no me deja realizar esta cantidad exacta de margin*/
+    border-bottom-left-radius: 50%; /*Utilizamos el radius para conseguir el efecto redondeado*/
     border-bottom-right-radius: 50%;
 }
 #bienvenida{
     background-color: #DC3545;
-    position: relative;
     margin-top: -20px;
-    z-index: 10;/*a*/
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);/*a*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);/*Agrego el box-shadow con css porque esta sombra en concreto no me la ofrece boostrap*/
 }
 
 
 #bienvenida img{
-    position: relative;
     margin-top: -30px;
 }
+/*------------------------FIN BIENVENIDA-----------------------------*/
+
+/*------------------------PRESENTACIÓN-----------------------------*/
 
 #presentacion{
     background: rgb(255,255,255);
@@ -62,40 +53,48 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 .card-border{
-    border: solid 10px white;/*a*/
-    border-radius: 20px;
-    overflow: hidden;
-    transition: all ease-out 0.2s;/*a*/
+    border: solid 10px white;/*Pongo el border con css ya que no me deja poner con boostrap este color*/
+    border-radius: 20px; /*Pongo este redondeado sin usar boostrap porque quiero especificamente este nivel de redondeado*/
+    transition: all ease-out 0.2s;/*Boostrap no me deja poner esta transición*/
 }
-.card-border:hover{
-    transform: scale(1.05);
+.card-border:hover{ 
+    transform: scale(1.05); /*Para que cuando pases el cursor por encima la imagen se agrande*/
 }
 
 .text-shadow{
-    text-shadow: 0 3px 3px rgba(0,0,0,0.6);
+    text-shadow: 0 3px 3px rgba(255, 255, 255, 0.6); /*Boostrap no me permite darle sombra al texto*/
 }
-#separator-amiibos{
+/*------------------------FIN PRESENTACIÓN-----------------------------*/
+
+/*------------------------ENTRETENIMIENTO-----------------------------*/
+#entretenimiento{   
+    background-color: rgb(255, 255, 219);
+    background-size: 40px 40px;
+}
+#separator-entretenimiento{
     width: 100%;
-    overflow: hidden;
     position: relative;
     z-index: 2;
     background-color: #4E8259;
 }
-#separator-amiibos .content{
+#separator-entretenimiento .content{
     width: 110%;
-    height: 100px;
+    height: 50px;
     margin-left: -5%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+/*   border-top-left-radius: 50%;
+    border-top-right-radius: 50%; */
 }
+/*------------------------FIN ENTRETENIMIENTO-----------------------------*/
 
-#separator-amiibos-footer{
+/*------------------------AMIIBOS-----------------------------*/
+
+/* #separator-amiibos-footer{
     min-height: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(../img/pokemons_corriendo.gif),;
 }
-
+ */
 
 #amiibos{
     background: url(../img/fondo_amiibos.jpg);
@@ -104,24 +103,20 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     background-size: 100%, auto;
 }
 .amiibo{
-    cursor: pointer;
+    cursor: pointer; /*Para el cambio de cursor*/
     transition: all ease-out 0.2s;
 }
 .amiibo:hover{
-    transform: scale(1.05);
+    transform: scale(1.05); /*Para que la imagen se amplie*/
 }
 
 .amiibo-name{
     background-color: rgba(0,0,0,0.4);
     color: white;
-    display: inline-block;
-    margin: 0 auto;
+/*     margin: 0 auto;   || Hecho con boostrap*/ 
     text-align: center;
     border-radius: 15px;
 }
+/*------------------------FIN AMIIBOS-----------------------------*/
 
-#entretenimiento{   
-    background-color: rgb(255, 255, 219);
-    background-size: 40px 40px;
-}
 
