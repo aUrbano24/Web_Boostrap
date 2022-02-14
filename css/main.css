@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     
     @media screen and (max-width: 955px) {
     #presentacion {/*No se puede hacer con boostrap a si que lo hacemos de esta manera, lo que hace es cambiar la imagen de fondo por un fondo, para hacerlo más responsive.*/
-        background-image: linear-gradient(0deg, rgb(146, 217, 221) 0%,rgb(83, 241, 122) 57%);
+        background-image: linear-gradient(0deg, rgb(146, 217, 221) 0%,rgb(219, 104, 104) 57%);
     }
 
 }
