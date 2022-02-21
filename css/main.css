@@ -9,6 +9,11 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     font-family: 'Bitter', serif;
 
 }
+/*-------------MENU--------------*/
+.navbar{
+    background-color: #dc3546e0;
+}
+
 /*------------------------BIENVENIDA-----------------------------*/
 #cuadro-bienvenida{
     background-color: #DC3545;
@@ -79,7 +84,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 .carousel-item {
-    max-height: 900px;
+    max-height: 1000px;
 }
 div.row h3 {
     color:rgb(0, 0, 0);
