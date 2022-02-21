@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-auto">
+<html lang="es" class="overflow-auto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +7,20 @@
     <!--Fuente Bitter-->
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
     <!--CSS Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
     <!--Fuente adicional de iconos Boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <!--CSS Propio-->
     <link rel="stylesheet" href="css/main.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./img/favicon_Logo_Nintendo.png" style="width: 50px; height: 50px;" type="image/x-icon">
 </head>
 <body class="overflow-auto">
+  <!--************************************ MENU DE NAVEGACIÓN **********************************************
+    *******************************************************************************************************-->
 
-  <!-------------------------------------- MENU DE NAVEGACIÓN ------------------------------------------------------
-  ----------------------------------------------------------------------------------------------------------------->
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-danger position-relative" id="navbar"> <!-- bg-danger = fondo rojo  ||  navbar-dark = estilo del menu oscuro-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger position-relative fs-5" id="navbar"> <!-- bg-danger = fondo rojo  ||  navbar-dark = estilo del menu oscuro-->
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.jpg" alt="" width="200"> <!-- ENLACE/IMAGEN LOGO-->
@@ -96,15 +98,15 @@
       <div class="container-xxl p-5">
         
         <div class="row">
-            <h3 class="text-center pb-5 h1"><strong>¡Descubre el maravilloso mundo Pokemon!</strong> </h3>
+            <h3 class="text-center pb-5 h1 fs-1"><strong>¡Descubre el maravilloso mundo Pokemon!</strong> </h3>
         </div>
 
-        <div class="row">
+        <div class="row fs-5">
           <div class="col-md">
             <div class="card w-100 card-border overflow-auto mb-5">
                 <img src="img/explora_pokemon.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Explora cada rincón de este mundo y descubre cada una de las fantásticas criaturas que lo habitan.¡A que esperas!</p>
+                  <p class="card-text">Explora cada rincón de este mundo y descubre cada una de las fantásticas criaturas que lo habitan  ¡A que esperas!</p>
                 </div>
               </div>
           </div>
@@ -136,41 +138,41 @@
 
     <!----------------------------------------------- ENTRETENIMIENTO ------------------------------------------------------
   ----------------------------------------------------------------------------------------------------------------->
-  <div id="entretenimiento" >
+  <div id="entretenimiento-xxl" >
     <div class="container-sm p-5">
-      <h3 class="text-center h1">El entretenimiento con Pokemon esta asegurado!!</h3>
+      <h3 class="text-center h1 fs-1 fw-bold">El entretenimiento con Pokemon esta asegurado!!</h3>
       <div class="row justify-content-center align-items-center">
         <div class="col-3 d-none d-md-block">
-          <img src="./img/Snorlax-Pokemon-PNG-Background.png" class="w-100"> <!--Hacemos que la imagen sea una columna con valor de 3/12 que desaparecera con el responsive-->
+          <img src="./img/Snorlax-Pokemon-PNG-Background.png" alt="Imagen_Snorlax" class="w-100"> <!--Hacemos que la imagen sea una columna con valor de 3/12 que desaparecera con el responsive-->
         </div>
         <div class="col-9-lg"> <!-- El resto de columnas tendran un valor de 9/12-->
           <div class="row justify-content-md-center">
-            <div class="col p-1">
+            <div class="col-sm p-1">
               <div class="card bg-primary text-white">   
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <img src="./img/pokemon_serie.png" class="w-100"  alt="...">
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <div class="card-body">
-                      <h5 class="card-title">Serie</h5>
-                      <p class="card-text text-justify">Pokemon es una de las series más vistas hasta la fecha con ni más ni menos que 24 temporadas</p>
+                      <h5 class="card-title fs-3">Serie</h5>
+                      <p class="card-text text-justify fs-5">Pokemon es una de las series más vistas hasta la fecha con ni más ni menos que 24 temporadas</p>
                     </div><!--card-body-->
                   </div><!--col-->
                 </div><!--row-->
               </div><!--CARD-->
             </div><!--col-->
             
-            <div class="col p-1">
+            <div class="col-sm p-1">
               <div class="card bg-dark text-white">   
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <div class="card-body">
-                      <h5 class="card-title">Peliculas</h5>
-                      <p class="card-text">No solo puedes ver la serie, si no que también cuenta con hasta 23 increibles películas a día de hoy.</p>
+                      <h5 class="card-title fs-3">Peliculas</h5>
+                      <p class="card-text fs-5">No solo puedes ver la serie, si no que también con muchas más aventuras, hasta unas 23 peliculas.</p>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <img src="img/pokemon_peliculas.png" class="w-100"  alt="...">
                   </div><!--col-->
                 </div><!--row-->
@@ -178,31 +180,31 @@
             </div>
           </div>
         <div class="row  justify-content-md-center">
-          <div class="col p-1">
+          <div class="col-sm p-1">
             <div class="card bg-danger text-white">   
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <img src="img/pokemon_juego.png" class="w-100"  alt="...">
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <div class="card-body">
-                      <h5 class="card-title">Videojuegos</h5>
-                      <p class="card-text">Como no recordar el origen de pokemon con sus fantásticos juegos y sus 95 entregas</p>
+                      <h5 class="card-title fs-3">Videojuegos</h5>
+                      <p class="card-text fs-5">Como no recordar el origen de pokemon con sus fantásticos juegos y sus 95 entregas</p>
                     </div>
                   </div><!--col-->
                 </div><!--row-->
               </div><!--CARD-->
           </div>
-          <div class="col p-1">
+          <div class="col-sm p-1">
             <div class="card bg-info text-white">   
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <div class="card-body">
-                      <h5 class="card-title">Juego Cartas</h5>
-                      <p class="card-text">Colecciona, juega y diviértete con las magníficas cartas de Pokemon. ¡A qué esperas!</p>
+                      <h5 class="card-title fs-3">Cartas</h5>
+                      <p class="card-text fs-5">Colecciona, juega y diviértete con las magníficas cartas de Pokemon. A qué Pokesperas</p>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <img src="img/pokemon_cartas.png" class="w-100"  alt="...">
                   </div><!--col-->
                 </div><!--row-->
@@ -220,44 +222,44 @@
   ----------------------------------------------------------------------------------------------------------------->
       <!--Se subdivira principalmente en 6 filas y 3 columnas que ira cambiando con el responsive.-->  
       <section id="tipos" class="container-fluid text-center p-5 bg-light">
-        <h2 class="text-center pb-5">Elementos Pokemon</h2>
+        <h1 class="text-center pb-5 fs-2"><strong>Elementos Pokemon</strong></h1>
         <!--Primera fila-->
           <div class="row d-flex align-items-center">
               <div class="col-xs-12 col-md-6 col-lg-4"> <!--Configuramos cada columna para que dependiendo de el tamaño de la pantalla, las columnas ocupen más o menos-->
-                <h4>Acero</h4>
+                <h4 class="fs-1">Acero</h4>
                 <p>
-                  <a data-bs-toggle="collapse" href="#imagenUno" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <a data-bs-toggle="collapse" href="#imagenUno" role="button" aria-expanded="false" aria-controls="collapse">
                     <img src="./img/tipos/icono_tipo_acero.png " width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                   </a>
                 </p>
                 <div class="collapse" id="imagenUno">
-                  <div class="card card-body text-dark">
+                  <div class="card card-body text-dark fs-4">
                     Los Pokémon de tipo acero destacan por tener altas defensas, pero también por poseer poca velocidad. No se pueden envenenar en condiciones normales.<br><br> Son muy buenos luchadores, los ataques físicos raras veces les causan mucho daño. Su punto débil puede resultar la velocidad y debilidad a los ataques de tipo fuego, tipo tierra y tipo lucha.
                   </div>
                 </div>  
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
-                <h4>Agua</h4>
+                <h4 class="fs-2">Agua</h4>
                 <p>
-                  <a data-bs-toggle="collapse" href="#ImagenDos" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <a data-bs-toggle="collapse" href="#ImagenDos" role="button" aria-expanded="false" aria-controls="collapse">
                     <img src="./img/tipos/icono_tipo_agua.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                   </a>
                 </p>
                 <div class="collapse" id="ImagenDos">
-                  <div class="card card-body text-dark">
-                    Se dice que es puro y que suele adaptarse a cualquier situación o condición climática, ya que el agua puede adoptar cualquier forma en cualquier momento. Por ejemplo, en un vaso adopta una forma, mientras que en una piscina adopta otra distinta. <br><br> Además, el agua es comúnmente denominada en química como el "disolvente universal" y está presente en todas las formas de vida en la realidad (sin agua no hay vida). Por eso, los Pokémon de tipo agua se sienten a menudo libres en cualquier sitio donde haya agua a su disposición y la mayoría de estos Pokémon pertenecen también a otros tipos. 
+                  <div class="card card-body text-dark fs-4">
+                    Se dice que es puro y que suele adaptarse a cualquier situación o condición climática, ya que el agua puede adoptar cualquier forma en cualquier momento. Por ejemplo, en un vaso adopta una forma, mientras que en una piscina adopta otra distinta. <br><br> Además, el agua es comúnmente denominada en química como el "disolvente universal" y está presente en todas las formas de vida en la realidad (sin agua no hay vida). 
                   </div>
                 </div> 
               </div>
               <div class="col-xs-12 col-md-12 col-lg-4">
-                <h4>Bicho</h4>
+                <h4 class="fs-2">Bicho</h4>
                 <p>
-                  <a data-bs-toggle="collapse" href="#ImagenTres" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <a data-bs-toggle="collapse" href="#ImagenTres" role="button" aria-expanded="false" aria-controls="collapse">
                     <img src="./img/tipos/icono_tipo_bicho.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                   </a>
                 </p>
                 <div class="collapse" id="ImagenTres">
-                  <div class="card card-body text-dark">
+                  <div class="card card-body text-dark fs-4">
                     Este grupo de Pokémon se caracteriza por su crecimiento rápido ya que no tardan mucho en evolucionar (excepto Larvesta a Volcarona), viven primordialmente (si no en su totalidad) en los bosques y zonas cercanas a estos,algunos son un poco más difíciles de divisar debido a que se encuentran en copas de árboles donde anidan. <br><br> Muchos de los Pokémon de tipo bicho tienen como tipo secundario volador, lo cual los hace más resistentes a los ataques del tipo planta y tipo lucha, pero los hace más débiles al tipo roca.
                   </div>
                 </div> 
@@ -267,45 +269,41 @@
 
           <div class="row d-flex align-items-center">
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <h4>Siniestro</h4>
+              <h4 class="fs-2">Siniestro</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#imagenCuatro" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#imagenCuatro" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_dark.png " width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="imagenCuatro">
-                <div class="card card-body text-dark">
+                <div class="card card-body text-dark fs-4">
                   Los Pokémon de tipo siniestro son en su mayoría agresivos y misteriosos. Por lo tanto, encontrar un Pokémon salvaje de tipo siniestro es algo complicado. Fueron agregados en la segunda generación para presentar una debilidad ante el tipo psíquico, que hasta entonces sólo tenía el tipo bicho (cuyos movimientos no representaban una amenaza) y el tipo fantasma (cuyos representantes sólo eran la línea evolutiva de Gastly y, al poseer también tipo veneno, no resultaban demasiado peligrosos para estos).
-                  <br><br>
-                Suelen ser de carácter malicioso, crueles, fríos y astutos. Sin embargo, no son necesariamente malvados. Absol, por ejemplo, tiene fama de ser un mal presagio cuando en realidad alerta a las personas de desastres próximos. Darkrai es acusado de provocar pesadillas a quienes duermen a su alrededor, cuando realmente no lo hace a propósito y a veces lo utiliza para comunicarse con las personas.
                 </div>
               </div>  
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <h4>Dragon</h4>
+              <h4 class="fs-2">Dragon</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#ImagenCinco" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#ImagenCinco" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_dragon.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="ImagenCinco">
-                <div class="card card-body text-dark">
-                  Es un tipo elemental ancestral; muchos de los últimos Pokémon legendarios descubiertos, considerados deidades, son del tipo dragón: Rayquaza (cielo), Giratina (antimateria), Dialga (tiempo), Palkia (espacio), Zekrom y Reshiram (Yin y Yang), Kyurem (el cero absoluto, ausencia de energía) y Zygarde (orden). Otros Pokémon de este tipo se caracterizan por ser difíciles de atrapar y entrenar. Interesante es el hecho de que muchos Pokémon del tipo "dragón" llegan a superar las estadísticas comunes.
-                  <br><br>
-                Por ello, quienes se especializan en este tipo de Pokémon suelen convertirse en entrenadores famosos como Lance, el último miembro del Alto Mando en Kanto y tres años después campeón en la región de Johto, su prima Débora, la última líder de gimnasio en Johto, Dracón, el último miembro del Alto Mando en Hoenn, los dos últimos líderes de gimnasio de Teselia, Iris y Lirio, quien esta primera se convierte dos años después en campeona de la región Teselia, y finalmente esta Drácena que forma parte del Alto Mando en Kalos. Los entrenadores especializados en este tipo son llamados domadragones.
+                <div class="card card-body text-dark fs-4">
+                  Es un tipo elemental ancestral; muchos de los últimos Pokémon legendarios descubiertos, considerados deidades, son del tipo dragón: Rayquaza (cielo), Giratina (antimateria), Dialga (tiempo), Palkia (espacio), Zekrom y Reshiram (Yin y Yang), Kyurem (el cero absoluto, ausencia de energía) y Zygarde (orden). <br><br> Otros Pokémon de este tipo se caracterizan por ser difíciles de atrapar y entrenar. Interesante es el hecho de que muchos Pokémon del tipo "dragón" llegan a superar las estadísticas comunes.
                 </div>
               </div> 
             </div>
             <div class="col-xs-12 col-md-12 col-lg-4">
-              <h4>Eléctrico</h4>
+              <h4 class="fs-2">Eléctrico</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#ImagenSeis" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#ImagenSeis" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_electrico.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="ImagenSeis">
-                <div class="card card-body text-dark">
-                  Los Pokémon de tipo eléctrico almacenan electricidad estática en sus cuerpos y luego la liberan en forma de un ataque como Rayo por diferentes partes: las mejillas, la cola, las orejas o antenas. <br><br> Pero cuando un Pokémon de tipo eléctrico absorbe demasiada electricidad (ya sea por tormentas eléctricas o por aparatos que funcionen con electricidad), resulta muy peligroso porque entonces tiene demasiada energía contenida en su cuerpo que no puede ser liberada en poco tiempo y se enferman. Cuando eso pasa hay que rápidamente quitarles la electricidad en exceso antes de que en el peor de los casos el Pokémon se sobrecargue y explote.
+                <div class="card card-body text-dark fs-4">
+                  Los Pokémon de tipo eléctrico almacenan electricidad estática en sus cuerpos y luego la liberan en forma de un ataque como Rayo por diferentes partes: las mejillas, la cola, las orejas o antenas. <br><br> Pero cuando un Pokémon de tipo eléctrico absorbe demasiada electricidad (ya sea por tormentas eléctricas o por aparatos que funcionen con electricidad).
                 </div>
               </div> 
             </div>
@@ -315,44 +313,43 @@
 
         <div class="row d-flex align-items-center">
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <h4>Fuego</h4>
+              <h4 class="fs-2">Fuego</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#imagenSiete" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#imagenSiete" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_fuego.png " width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="imagenSiete">
-                <div class="card card-body text-dark">
+                <div class="card card-body text-dark fs-4">
                   Los Pokémon de tipo fuego basan sus ataques principalmente en el control de este elemento y la mayoría de estos ataques pueden quemar al Pokémon oponente.
                   <br><br>
-                  Son apasionados y algunos de mal carácter (como el Charizard de Ash), viven en cuevas o zonas rocosas y muy áridas, y más probable aún cerca de volcanes activos. Sin embargo, los únicos Pokémon que aparentemente suelen andar por lugares verdes como las praderas, son Ponyta y Rapidash pudiendo ser que estos lugares les permiten galopar sin obstáculos. También algunos son más dóciles, como Growlithe, Vulpix y sus respectivas evoluciones.
+                  Son apasionados y algunos de mal carácter (como el Charizard de Ash), viven en cuevas o zonas rocosas y muy áridas, y más probable aún cerca de volcanes activos.
                 </div>
               </div>  
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <h4>Fantasma</h4>
+              <h4 class="fs-2">Fantasma</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#ImagenOcho" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#ImagenOcho" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_ghost.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="ImagenOcho">
-                <div class="card card-body text-dark">
-                  Se caracteriza por ser un tipo con pocos Pokémon y movimientos, también porque sus Pokémon poseen pocos PS (a excepción de Drifblim, Giratina, Jellicent entre otros), principalmente Shedinja (con tan solo 1 PS). En batalla resulta muy útil, ya que posee 2 inmunidades, al tipo lucha y al tipo normal de las cuales los ataques son muy comunes, a pesar de que este último tipo es inmune a su vez a sus ataques, es decir, que los fantasmas son inútiles contra los normales y viceversa. A partir de la sexta generación no les afectan movimientos y habilidades que atrapan al Pokémon, como bloqueo o sombra trampa.
-                  <br><br>
-                  Los Pokémon que pertenecen al tipo fantasma generalmente se relacionan con el terror, lo oscuro y el más allá. Suelen vivir en casas abandonadas, cementerios, torres fúnebres y lugares oscuros e inhabitados.
+                <div class="card card-body text-dark fs-4">
+                  Se caracteriza por ser un tipo con pocos Pokémon y movimientos, también porque sus Pokémon poseen pocos PS (a excepción de Drifblim, Giratina, Jellicent entre otros), principalmente Shedinja (con tan solo 1 PS). <br><br> En batalla resulta muy útil, ya que posee 2 inmunidades, al tipo lucha y al tipo normal de las cuales los ataques son muy comunes, a pesar de que este último tipo es inmune a su vez a sus ataques.
+              
                 </div>
               </div> 
             </div>
             <div class="col-xs-12 col-md-12 col-lg-4">
-              <h4>Hada</h4>
+              <h4 class="fs-2">Hada</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#ImagenNueve" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#ImagenNueve" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_hada.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="ImagenNueve">
-                <div class="card card-body text-dark">
+                <div class="card card-body text-dark fs-4">
                   El tipo hada representa principalmente la pureza y el poder mágico, siendo esto lo más característico de esta especie. Se suelen encontrar principalmente en zonas al aire libre rodeadas de flores y/o elementos similares. <br><br> Fue introducido para equilibrar el poder superior de los Pokémon de tipo dragón, tal y como se hizo en la segunda generación con el tipo acero y con el tipo siniestro.
                 </div>
               </div> 
@@ -361,49 +358,45 @@
         <!--Cuarta fila-->
         <div class="row d-flex align-items-center">
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <h4>Hielo</h4>
+              <h4 class="fs-2">Hielo</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#imagenDiez" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#imagenDiez" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_hielo.png " width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="imagenDiez">
-                <div class="card card-body text-dark">
+                <div class="card card-body text-dark fs-4">
                   Destacan por su gran resistencia y adaptación al medio frío o glaciar, como son las cimas de las montañas, las cavernas y cuevas heladas o incluso los polos. Tienen la capacidad de congelar al enemigo en combate. Además pueden realizar ataques devastadores como frío polar.
                   <br><br>
                   Muchos Pokémon de este tipo representan seres vivos que se encuentran en regiones y paisajes helados como osos polares, focas, leones marinos y morsas.
-                  <br><br>
-                  Sus cuatro debilidades naturales son los ataques de tipo fuego (por un derretimiento), de tipo roca, acero y lucha (la fuerza y dureza de estos Pokémon pueden resquebrajar al hielo, del que están compuestos la mayoría de los ejemplares de este tipo).
                 </div>
               </div>  
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <h4>Lucha</h4>
+              <h4 class="fs-2">Lucha</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#ImagenOnce" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#ImagenOnce" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_lucha.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="ImagenOnce">
-                <div class="card card-body text-dark">
-                  Este tipo de Pokémon son especialistas en el combate cuerpo a cuerpo. Se podría decir que son opuestos a los del tipo psíquico, ya que estos últimos dependen del ataque especial mientras que los del tipo lucha se especializan en ataque físico. En su mayoría, sus estadísticas están equilibradas (como Hitmontop o Medicham), o son veloces luchadores con muchos puntos de ataque (como Lucario e Infernape). 
-                  <br><br>
-                  El hecho de que varios Pokémon de tipo lucha evolucionen de métodos especiales hace referencia a los viajes internos que realizan los luchadores en busca de conocimiento para triunfar o de la paz interior. Independientemente de esto, el tipo lucha es el tipo con más ventajas frente a otros tipos, junto con el tipo tierra, teniendo un total de 5.
+                <div class="card card-body text-dark fs-4">
+                  Este tipo de Pokémon son especialistas en el combate cuerpo a cuerpo. Se podría decir que son opuestos a los del tipo psíquico, ya que estos últimos dependen del ataque especial mientras que los del tipo lucha se especializan en ataque físico. <br><br> En su mayoría, sus estadísticas están equilibradas (como Hitmontop o Medicham), o son veloces luchadores con muchos puntos de ataque (como Lucario e Infernape). 
                 </div>
               </div> 
             </div>
             <div class="col-xs-12 col-md-12 col-lg-4">
-              <h4>Normal</h4>
+              <h4 class="fs-2">Normal</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#ImagenDoce" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#ImagenDoce" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_normal.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="ImagenDoce">
-                <div class="card card-body text-dark">
+                <div class="card card-body text-dark fs-4">
                   El tipo normal abarca la mayor cantidad y variedad de movimientos que el resto de tipos. Gran parte de estos son movimientos que no realizan daño, o no lo hacen directamente, sino que afectan a las características o estados del Pokémon.
                   <br><br>
-                  Los tipos normal son los más diversos entre los Pokémon, con estadísticas variadas, desarrollos y requerimientos para sus evoluciones diferentes para cada uno, al igual que diferir en las zonas donde se pueden capturar, desde bosques, cuevas, montañas, ciudades, etc.
+                  Los tipos normal son los más diversos entre los Pokémon, con estadísticas variadas, desarrollos y requerimientos para sus evoluciones diferentes.
                 </div>
               </div> 
             </div>
@@ -411,49 +404,45 @@
         <!--Quinta fila-->
         <div class="row d-flex align-items-center">
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <h4>Planta</h4>
+              <h4 class="fs-2">Planta</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#imagenTrece" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#imagenTrece" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_planta.png " width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="imagenTrece">
-                <div class="card card-body text-dark">
+                <div class="card card-body text-dark fs-4">
                   Los Pokémon de tipo planta suelen ser pacíficos y les gusta cuidar de las flores y a los demás, pero también son grandes luchadores y pueden envenenar, paralizar o dormir al rival en combate.
                   <br><br>
-                  Normalmente su cuerpo suele ser igual a alguna especie vegetal, en cuyo caso el Pokémon crece en un desarrollo muy similar a un vegetal. Cuando no es así, los Pokémon suelen desarrollar hojas, flores, entre otros que tienen un crecimiento propio, pero que son controladas por el Pokémon. Otra cosa que caracteriza a los Pokémon de tipo planta es que varios de sus movimientos permiten recuperar puntos de salud, como arraigo, drenadoras o síntesis.
+                  Normalmente su cuerpo suele ser igual a alguna especie vegetal, en cuyo caso el Pokémon crece en un desarrollo muy similar a un vegetal.
                 </div>
               </div>  
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <h4>Psíquico</h4>
+              <h4 class="fs-2">Psíquico</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#ImagenCatorce" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#ImagenCatorce" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_psiquico.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="ImagenCatorce">
-                <div class="card card-body text-dark">
+                <div class="card card-body text-dark fs-4">
                   Se puede localizar a este tipo de Pokémon en cuevas o zonas cercanas a estas. Por ejemplo, Abra se puede capturar en la Cueva Granito, y Chimecho se puede capturar en la cima del Monte Pírico, en el lado exterior (ambos en la tercera generación).
                   <br><br>
                   Durante la primera generación solo tenían como debilidad el tipo bicho, pues no existía todavía el tipo siniestro y eran inmunes al tipo fantasma.
-                  <br><br>
-                  Los movimientos de tipo psíquico pertenecen principalmente a la categoría de otro. Es decir, que hay muchos ataques del tipo psíquico basados en estrategias.
                 </div>
               </div> 
             </div>
             <div class="col-xs-12 col-md-12 col-lg-4">
-              <h4>Roca</h4>
+              <h4 class="fs-2">Roca</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#ImagenQuince" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#ImagenQuince" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_roca.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="ImagenQuince">
-                <div class="card card-body text-dark">
+                <div class="card card-body text-dark fs-4">
                   El tipo roca destaca por su gran defensa frente a ataques físicos. Sin embargo, tiene en su contra que presenta varias debilidades con respecto a otros tipos, y los Pokémon de este tipo no se caracterizan por ser muy veloces. Cabe destacar que la mayoría de los movimientos de tipo roca (sobre todo los físicos) poseen baja precisión a la hora de atacar.
-                  <br><br>
-                  Todos los Pokémon prehistóricos descubiertos pertenecen a este tipo. Eso es debido a que la única forma de recuperarlos es mediante sus fósiles, que son antiguos restos orgánicos petrificados en la corteza terrestre. Estos fósiles preservan suficiente material genético para ser revividos y nos entregan a unos Pokémon primitivos, con la característica común de ser todos del tipo roca.
                 </div>
               </div> 
             </div>
@@ -461,47 +450,43 @@
         <!--Sexta fila-->
         <div class="row d-flex align-items-center">
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <h4>Tierra</h4>
+              <h4 class="fs-2">Tierra</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#imagenDiesiceis" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#imagenDiesiceis" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_tierra.png " width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="imagenDiesiceis">
-                <div class="card card-body text-dark">
-                  Los Pokémon de este tipo tienen temor al tipo agua, igual que los de tipo roca, pero a partir de la segunda generación hay excepciones como es el caso de Wooper y Quagsire que son de tipo agua y tierra a la vez, también están Marshtomp, Swampert, Whiscash, Gastrodon, Palpitoad y Seismitoad.
+                <div class="card card-body text-dark fs-4">
+                  Los Pokémon de este tipo tienen temor al tipo agua, igual que los de tipo roca, pero a partir de la segunda generación hay excepciones como es el caso de Wooper y Quagsire que son de tipo agua y tierra a la vez.
                   <br><br>
                   El tipo tierra es, junto al Tipo lucha, el tipo que tiene más ventajas sobre otros tipos, con un total de cinco (Eléctrico, roca, acero, veneno y fuego).
                 </div>
               </div>  
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <h4>Veneno</h4>
+              <h4 class="fs-2">Veneno</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#ImagenDiecisiete" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#ImagenDiecisiete" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_veneno.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="ImagenDiecisiete">
-                <div class="card card-body text-dark">
-                  Muchos Pokémon de este tipo pueden expulsar de sus cuerpos distintas sustancias venenosas como gases, ácidos, venenos, esporas y a veces olores malolientes. También los Pokémon del tipo veneno están basados en seres vivientes que son generalmente venenosos como serpientes, arañas, ranas, plantas y hongos, y también en cosas contaminantes como lodo y bolsas de basura.
-                  <br><br>
-                  Una característica muy curiosa que tienen algunos de los Pokémon del tipo veneno es su similitud con los ninjas, además de que en la primera generación el líder especialista en este tipo es un ninja, muchos Pokémon siguen este concepto, como Koffing parecido a una bomba de humo, Crobat y su velocidad y sigilo o Toxicroak con sus zarpas en las muñecas.
+                <div class="card card-body text-dark fs-4">
+                  Muchos Pokémon de este tipo pueden expulsar de sus cuerpos distintas sustancias venenosas como gases, ácidos, venenos, esporas y a veces olores malolientes.                   <br><br> También los Pokémon del tipo veneno están basados en seres vivientes que son generalmente venenosos como serpientes, arañas, ranas, plantas y hongos, y también en cosas contaminantes como lodo y bolsas de basura.
                 </div>
               </div> 
             </div>
             <div class="col-xs-12 col-md-12 col-lg-4">
-              <h4>Volador</h4>
+              <h4 class="fs-2">Volador</h4>
               <p>
-                <a data-bs-toggle="collapse" href="#ImagenDieciocho" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a data-bs-toggle="collapse" href="#ImagenDieciocho" role="button" aria-expanded="false" aria-controls="collapse">
                   <img src="./img/tipos/icono_tipo_volador.png" width="100px" class="img-fluid"   alt="tipo de universo cerrado">
                 </a>
               </p>
               <div class="collapse" id="ImagenDieciocho">
-                <div class="card card-body text-dark">
-                  Los Pokémon de tipo volador son rápidos y con ataques que normalmente son de contacto físico, o en los que utilizan el viento a su favor. Normalmente los Pokémon voladores tienen alas, aunque hay excepciones, como Rayquaza y Gyarados que siempre flotan sin poseer ni alas ni plumas debido a sus habilidades o Tornadus, Thundurus y Landorus que flotan gracias a la nube que poseen.
-                  <br><br>
-                  Los Pokémon de tipo volador tienen algunas desventajas. Los Pokémon eléctricos pueden paralizar a los Pokémon voladores haciéndolos caer bruscamente.
+                <div class="card card-body text-dark fs-4">
+                  Los Pokémon de tipo volador son rápidos y con ataques que normalmente son de contacto físico, o en los que utilizan el viento a su favor.<br><br> Normalmente los Pokémon voladores tienen alas, aunque hay excepciones, como Rayquaza y Gyarados que siempre flotan sin poseer ni alas ni plumas debido a sus habilidades o Tornadus, Thundurus y Landorus que flotan gracias a la nube que poseen.
                 </div>
               </div> 
             </div>
@@ -548,10 +533,7 @@
             </div>
             <div class="row py-5">
               <div class="col text-center">
-                <a href="https://www.nintendo.es/amiibo-/Gama-de-amiibo/Figuras-932319.html" target="_blank" class="link-dark">
-                  <button class="btn btn-warning btn-lg rounded-pill p-3 font-weight-bold">Ver más</button>
-                </a>
-                
+                  <button class="btn btn-warning btn-lg rounded-pill p-3 font-weight-bold"><a href="https://www.nintendo.es/amiibo-/Gama-de-amiibo/Figuras-932319.html" target="_blank" class="link-dark text-decoration-none">Ver más</a></button> 
               </div>
                 
             </div>
@@ -564,37 +546,35 @@
   ----------------------------------------------------------------------------------------------------------------->
 
   <!----------------------------------------------- MAPA Y ACORDEÓN------------------------------------------------------>
-    <div class="row w-100">
+    <div class="row w-100 pt-5 pr-4 pl-4 m-0 d-flex align-items-center justify-content-center">
       <!--Google map-->
-      <div id="map-container-google-1" class="z-depth-1-half map-container pt-4  d-flex align-items-center justify-content-center " style="height: 200px"> <!--Utilizamos flex para alinear al centro-->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15420.948896370184!2d139.75869137699536!3d35.655939968196236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ea56fc31281%3A0xeeee341f7057bf3c!2sNintendo%20Co.Ltd%20Tokyo%20Office!5e0!3m2!1ses!2sus!4v1644799934946!5m2!1ses!2sus" frameborder="0"
-        style="border:0" allowfullscreen></iframe>
-      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12962.038731791337!2d139.75977902159153!3d35.689073290699255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snintendo%20cerca%20de%20jap%C3%B3n!5e0!3m2!1ses!2ses!4v1645466708176!5m2!1ses!2ses"  height="600" ></iframe>
+
       <!--Fin Google Maps-->
       <!--Acordeón-->
-      <div class="d-flex align-items-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center  pt-4">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item" > <!--1º Elemento del acordeón-->
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Correo Electrónico
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body d-flex align-items-center justify-content-center">
-                <strong>alfonso.urbano@iescampanillas.com</strong>
+              <div class="accordion-body d-flex align-items-center justify-content-center" >
+                <strong class="fs-5">alfonso.urbano@iescampanillas.com</strong>
               </div>
             </div>
           </div>
           <div class="accordion-item d-flex  align-items-center justify-content-center"> <!--2º Elemento del acordeón-->
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Teléfono
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>+34 612345678.</strong>
+                <strong class="fs-5">+34 612345678.</strong>
               </div>
             </div>
           </div>
@@ -606,7 +586,7 @@
               
     <!----------------------------------------------- FOOTER ------------------------------------------------------>
     <footer class="w-100  d-flex  align-items-center justify-content-center">
-        <p class="fs-5 px-3 pt-3">ExpertD. Todos Los Derechos Reservados 2022</p>
+        <p class="fs-5 px-3 pt-3">NintedoES. Todos Los Derechos Reservados 2022</p>
         <div id="iconos" >
             <a href="https://www.facebook.com/NintendoES/?brand_redir=119240841493711" target="_blank"><i class="bi bi-facebook"></i></a>
             <a href="https://twitter.com/NintendoES" target="_blank"><i class="bi bi-twitter" ></i></a>
