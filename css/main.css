@@ -119,6 +119,12 @@ div.row h3 {
 
 /*------------------------FIN ENTRETENIMIENTO-----------------------------*/
 
+/*Tipos*/
+    #tipos img {
+        width: 100px;
+    }
+/*Fin tipos*/
+
 /*------------------------AMIIBOS-----------------------------*/
 
 /* #separator-amiibos-footer{
